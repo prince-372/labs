@@ -1,38 +1,468 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+:root {
+  /* fontsize */
+  --fs-sm: 14px;
+  --fs-sm1: 16px;
+  --fs-md: 18px;
+  --fs-md1: 20px;
+  --fs-lg: 24px;
+  --fs-lg1: 32px;
+  --fs-xl: 52px;
+  --fs-xl1: 72px;
+  --fs-xxl: 187px;
+
+  /* color */
+  --text-lightgrey: #bbb7c7;
+  --text-grey: #b6b5b6;
+  --text-lightblack: #0f0f0f;
+
+  /* linehight */
+  --lh-sm: ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* fontsize */
+.fs-sm {
+  font-size: var(--fs-sm);
+}
+.fs-sm1 {
+  font-size: var(--fs-sm1);
+}
+.fs-md {
+  font-size: var(--fs-md);
+}
+.fs-md1 {
+  font-size: var(--fs-md1);
+}
+.fs-lg {
+  font-size: var(--fs-lg);
+}
+.fs-lg1 {
+  font-size: var(--fs-lg1);
+}
+.fs-xl {
+  font-size: var(--fs-xl);
+}
+.fs-xl1 {
+  font-size: var(--fs-xl1);
+}
+.fs-xxl {
+  font-size: var(--fs-xxl);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* color */
+
+.text-lightgray {
+  color: var(--text-lightgrey);
+}
+.text-gray {
+  color: var(--text-grey);
+}
+.text-lightblack {
+  color: var(--text-lightblack);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+/* img */
+.header-img {
+  background-image: url("./assets/image/header-img.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg-sec-img {
+  background-image: url("./assets/image/bg-sec-img.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg-sec2-img {
+  background-image: url("./assets/image/nature-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.font-roboto {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.btn-bg {
+  background: linear-gradient(151.6deg, #d4145a 1.85%, #fbb03b 98.12%);
+}
+/* spacing */
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.px-32 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.py-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.py-150 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.my-150 {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.pt-150 {
+  padding-top: 150px;
+}
+.px-41 {
+  padding-right: 41px;
+  padding-left: 41px;
+}
+.pt-100 {
+  padding-top: 100px;
+}
+
+/* max-width */
+.max-w-873 {
+  max-width: 873px;
+}
+.max-w-283 {
+  max-width: 283px;
+}
+.min-h-766 {
+  min-height: 766px;
+}
+.max-w-793 {
+  max-width: 793px;
+}
+.min-h-592 {
+  min-height: 592px;
+}
+.min-h-720 {
+  min-height: 720px;
+}
+.max-w-311 {
+  max-height: 311px;
+}
+
+/* card */
+.card-game {
+  max-width: 571px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  padding-left: 36px;
+  padding-right: 36px;
+  backdrop-filter: blur(20px) !important;
+  border-radius: 30px;
+}
+.first-card {
+  max-width: 364px;
+  height: 272px;
+  border-radius: 30px;
+  padding-top: 49px;
+  padding-right: 26px;
+  padding-left: 26px;
+}
+
+.behind_card {
+  max-height: 100%;
+  z-index: 1;
+  height: 360px;
+  border-radius: 30px;
+  background: #0d0d0d;
+}
+
+.behind_card:hover .ellipesourtem {
+  opacity: 1;
+}
+
+/* /* background text  */
+.CEO_clr {
+  background: linear-gradient(151.6deg, #d4145a 1.85%, #fbb03b 98.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+
+ /* ellipse */
+.behind_card:hover .ellipesourtem {
+  opacity: 1;
+}
+
+.ellipesourtem {
+  position: absolute;
+  bottom: -122px;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s linear;
+  max-height: 156px;
+  z-index: -1;
+  filter: blur(75px);
+  background: linear-gradient(151.6deg, #d4145a 1.85%, #fbb03b 98.12%);
+}
+
+
+.footer-line {
+  width: 1440px;
+  height: 3px;
+  border-radius: 16px;
+  background-color: #676d6d;
+}
+.text-name {
+  position: absolute;
+  top: -15%;
+  right: -4%;
+}
+.overflow-x {
+  overflow-x: clip;
+}
+
+.time_logo {
+  top: -3%;
+  left: -5%;
+  z-index: 5;
+  height: 70px;
+  width: 70px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  border: 1px solid;
+  background: #ec7646;
+  border-image-source: linear-gradient(
+    90deg,
+    #ec7646 1.56%,
+    rgba(255, 255, 255, 0) 94.87%
+  );
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline::after {
+  left: 31px;
+}
+
+.timeline::after {
+  margin-left: -15px;
+}
+
+.content {
+  max-width: 410px;
+  padding: 25px 18px;
+  background-color: #100f12;
+  position: relative;
+  border-radius: 30px;
+  margin-inline-start: 30px;
+}
+
+.left::after,
+.right::after {
+  left: 15px;
+}
+
+.right {
+  left: 0%;
+}
+
+/* form */
+.anciant-bg {
+  padding: 100px 0;
+  background-image: url("./assets/image/anciant-bg-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: unset;
+  min-height: unset;
+}
+
+.card-form {
+  border-radius: 30px;
+  padding: 40px;
+  backdrop-filter: blur(15px);
+  position: relative;
+  z-index: 1;
+}
+
+.card-form::before {
+  transition: all 0.3s linear;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  background: linear-gradient(
+      231.49deg,
+      rgba(255, 255, 255, 0) -0.51%,
+      rgba(218, 43, 85, 0.3479) 83.2%
+    )
+    border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  opacity: 1;
+}
+
+.gradient-border-FOCUS:focus {
+  background: linear-gradient(#292b27, #292b27),
+    linear-gradient(
+      151.6deg,
+      rgba(212, 20, 90, 0.4) 1.85%,
+      rgba(251, 176, 59, 0.4) 98.12%
+    );
+  outline: none;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border: 1px solid transparent;
+}
+
+.input-box {
+  padding: 10px 0 10px 12px;
+  border: 1px solid #ffffff29;
+  background-color: #ffffff1a;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.max-w-561 {
+  max-width: 561px;
+}
+
+input[type="checkbox" i] {
+  accent-color: white;
+  width: 18px;
+  height: 18px;
+}
+
+.max-w-374 {
+  max-width: 374px;
+}
+
+
+.submitbox {
+  border-radius: 30px;
+  padding: 20px;
+  background: linear-gradient(151.6deg, #d4145a 1.85%, #fbb03b 98.12%);
+  max-width: 330px;
+  max-height: 240px;
+}
+
+.z-11 {
+  z-index: 11;
+}
+
+.modal_box {
+  backdrop-filter: blur(30px);
+}
+
+.modalsvg {
+  right: 20px;
+  top: 20px;
+}
+
+@media (min-width: 750px) {
+  .time_logo {
+    left: 42.4%;
+    z-index: 5;
+    height: 100px;
+    width: 100px;
+  }
+
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .timeline::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    border: 1px solid;
+    background: #ec7646;
+    border-image-source: linear-gradient(
+      90deg,
+      #ec7646 1.56%,
+      rgba(255, 255, 255, 0) 94.87%
+    );
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    left: 50%;
+  }
+
+  .right::after {
+    left: -16px;
+  }
+
+  .content {
+    max-width: 320px;
+    padding: 32px 22px;
+    background-color: #100f12;
+    position: relative;
+    border-radius: 30px;
+    margin-inline-start: 0px;
+    transition: all 400ms linear;
+  }
+
+  .min_vh_md_100 {
+    min-height: 100vh;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.min_vh_md_100 {
+  min-height: 70vh;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 992px) {
+  .time_logo {
+    left: 45.4%;
+    z-index: 5;
+    height: 100px;
+    width: 100px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .content {
+    max-width: 410px;
+
+    margin-inline-start: 20px;
+    padding: 45px 38px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    margin-inline-start: 90px;
   }
 }
