@@ -3,7 +3,7 @@ import Commanbtn from "./Commanbtn";
 
 const Next = () => {
   return (
-    <div className="py-100">
+    <div className="py-sm-100 py-50">
       <div className="bg-sec2-img min-h-592 d-flex align-items-center ">
         <div className=" container ">
           <div>

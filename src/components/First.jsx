@@ -2,10 +2,14 @@ import React from "react";
 
 const First = () => {
   return (
-    <div className="position-relative pt-100 overflow-x">
+    <div className="position-relative pt-sm-150 pt-50 overflow-x position-relative ">
+      <div className="first-elipes d-none d-sm-block"></div>
       <div className=" container ">
         <div className="row">
           <div className="col-lg-6 col-sm-12">
+            <div className="d-flex ">
+              <button className="team_btn mb-3">DOERS OVER TALKERS</button>
+            </div>
             <h2 className=" fw-bold fs-xl font-roboto text-white">
               Game <span className=" d-block ">First.Always.</span>
             </h2>
@@ -21,14 +25,14 @@ const First = () => {
               We’re solving that with world-class storytelling, world-building,
               game design, art and sound. And fun.
             </p>
-            <p className="fs-xxl fw-bold font-roboto text-lightblack text-name text-nowrap ">
+            <p className="fs-xxl fw-bold font-roboto text-lightblack text-name text-nowrap d-none d-sm-block">
               About Us
             </p>
           </div>
         </div>
-        <div className="row pt-100">
+        <div className="row pt-sm-100 pt-50">
           <div className="col-lg-4 col-md-6">
-            <div className="first-card ">
+            <div className="first-card overflow-hidden ">
               <p className=" fw-bold font-roboto text-white fs-lg1">
                 World Building
               </p>
@@ -39,7 +43,7 @@ const First = () => {
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
-            <div className="first-card">
+            <div className="first-card overflow-hidden ">
               <p className=" fw-bold font-roboto text-white fs-lg1">
                 Game Design
               </p>
@@ -51,7 +55,7 @@ const First = () => {
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
-            <div className="first-card">
+            <div className="first-card overflow-hidden ">
               <p className=" fw-bold font-roboto text-white fs-lg1">
                 Art and Sound
               </p>

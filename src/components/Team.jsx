@@ -94,7 +94,7 @@ const Team = () => {
   }
   const mycard = cardbio.map((mycard) => (
     <div className={`${index === 1 ? "" : ""} col-lg-6 col-12 `}>
-      <div className="behind_card position-relative mb-4 p-3 overflow-hidden">
+      <div className="team-card position-relative mb-4 p-3 overflow-hidden">
         <div className="d-sm-flex align-items-center">
           <img className="behind_img" src={mycard.img} alt="card-img" />
           <div>
@@ -117,8 +117,10 @@ const Team = () => {
     </div>
   ));
   return (
-    <div className="bg-black mt_2">
-      <p className="fs-xxl text-white fw-bold font-roboto ">Our Team</p>
+    <div id="team" className="bg-black mt_2 position-relative overflow-x">
+      <div className="team-elipes d-none d-sm-block"></div>
+      <div className="team-elipes2 d-none d-sm-block"></div>
+      <p className="fs-xxl text-lightblack fw-bold font-roboto text-name2 d-none d-sm-block">Our Team</p>
       <div className="container pt-2 ">
         <div className="d-flex align-items-center justify-content-center">
           <button className="team_btn ">OUR TEAM</button>

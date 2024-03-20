@@ -4,29 +4,43 @@ import { Facebook, Insta, LInkedin, Twiter } from "./Icons";
 
 const Footer = () => {
   return (
-    <div className="bg-black">
+    <div className=" position-relative overflow-x">
+      <div className=" footer-elipes"></div>
+      <div className=" footer-elipes2"></div>
       <div className=" container ">
         <div className="text-center pb-3">
           <img src={footerlogo} alt="footerlogo" />
         </div>
         <ul className=" d-flex gap-4 justify-content-center m-0">
           <li>
-            <a href="" className=" fw-normal fs-sm1 font-roboto text-gray">
+            <a
+              href="#home"
+              className=" fw-normal fs-sm1 font-roboto text-gray f-line position-relative"
+            >
               Home
             </a>
           </li>
           <li>
-            <a href="" className=" fw-normal fs-sm1 font-roboto text-gray">
+            <a
+              href="#roadmap"
+              className=" fw-normal fs-sm1 font-roboto text-gray f-line position-relative"
+            >
               Roadmap
             </a>
           </li>
           <li>
-            <a href="" className=" fw-normal fs-sm1 font-roboto text-gray">
+            <a
+              href="#team"
+              className=" fw-normal fs-sm1 font-roboto text-gray f-line position-relative"
+            >
               Team
             </a>
           </li>
           <li>
-            <a href="" className=" fw-normal fs-sm1 font-roboto text-gray">
+            <a
+              href="#about"
+              className=" fw-normal fs-sm1 font-roboto text-gray f-line position-relative"
+            >
               About Us
             </a>
           </li>

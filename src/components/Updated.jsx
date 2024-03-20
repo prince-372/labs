@@ -68,7 +68,7 @@ const Updated = () => {
     document.body.classList.remove("overflow-hidden");
   }
   return (
-    <div className="py-150">
+    <div id="about" className="py-sm-150 ">
       <div className=" anciant-bg " id="aboutus">
         <div className="container">
           <div className=" align-items-center row">

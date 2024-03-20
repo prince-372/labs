@@ -3,7 +3,7 @@ import Commanbtn from "./Commanbtn";
 
 const Gaming = () => {
   return (
-    <div className="my-150">
+    <div className="mb-sm-150 mb-50">
       <div className=" d-flex justify-content-end align-items-center min-h-766">
         <div className=" container ">
           <div className="card-game ms-auto ">

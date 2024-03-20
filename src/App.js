@@ -1,4 +1,5 @@
 import "./App.css";
+import Backtotop from "./components/Backtotop";
 import Domain from "./components/Domain";
 import First from "./components/First";
 import Footer from "./components/Footer";
@@ -15,8 +16,8 @@ import Updated from "./components/Updated";
 function App() {
   return (
     <div>
-      <div className="header-img">
-        {/* <Mynav /> */}
+      <div className="bg-header-sec">
+        <Mynav />
         <Header />
       </div>
       <Picture />
@@ -31,6 +32,7 @@ function App() {
       <Roadmap />
       <Updated />
       <Footer />
+      {/* <Backtotop/> */}
     </div>
   );
 }
