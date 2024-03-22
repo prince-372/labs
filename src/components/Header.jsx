@@ -8,7 +8,7 @@ const Header = () => {
       className=" container min-h-header justify-content-center d-flex align-items-center position-relative "
     >
       <img
-        className=" header-elipes d-none d-sm-block"
+        className=" header-elipes "
         src={elipes}
         alt="elipes"
       />

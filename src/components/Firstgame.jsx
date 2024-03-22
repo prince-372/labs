@@ -31,7 +31,7 @@ const Firstgame = () => {
           </div>
         </div>
         <div className="row pt-sm-100 pt-50">
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6 mb-5 mb-lg-0">
             <div className="first-card overflow-hidden ">
               <p className=" fw-bold font-roboto text-white fs-lg1">
                 World Building
@@ -42,7 +42,7 @@ const Firstgame = () => {
               </p>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6 mb-5 mb-lg-0">
             <div className="first-card overflow-hidden ">
               <p className=" fw-bold font-roboto text-white fs-lg1">
                 Game Design
@@ -54,7 +54,7 @@ const Firstgame = () => {
               </p>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6 mb-5 mb-lg-0">
             <div className="first-card overflow-hidden ">
               <p className=" fw-bold font-roboto text-white fs-lg1">
                 Art and Sound
