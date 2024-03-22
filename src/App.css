@@ -335,7 +335,7 @@
 }
 .text-name3 {
   position: absolute;
-  top: -11%;
+  top: -15%;
   right: -8%;
   z-index: 3;
 }
@@ -611,9 +611,8 @@ ul {
   border-radius: 261px;
   padding: 1px;
   /* control the border thickness */
-  background: linear-gradient(151.6deg, #D4145A 1.85%, #FBB03B 98.12%);
-  -webkit-mask:
-    linear-gradient(black 0 0) content-box,
+  background: linear-gradient(151.6deg, #d4145a 1.85%, #fbb03b 98.12%);
+  -webkit-mask: linear-gradient(black 0 0) content-box,
     linear-gradient(black 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -707,6 +706,14 @@ ul {
   opacity: 1;
 }
 
+#up {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 50px;
+  display: none;
+}
+
 /* .priloder */
 
 .cs-loader {
@@ -718,19 +725,17 @@ ul {
 }
 
 .cs-loader-inner {
-  transform: translateY(-50%);
-  top: 50%;
-  position: absolute;
-  width: calc(100% - 200px);
-  color: #FFF;
-  padding: 0 100px;
-  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .cs-loader-inner label {
   font-size: 20px;
   opacity: 0;
-  display:inline-block;
+  display: inline-block;
 }
 
 @keyframes lol {
@@ -774,31 +779,37 @@ ul {
 .cs-loader-inner label:nth-child(6) {
   -webkit-animation: lol 3s infinite ease-in-out;
   animation: lol 3s infinite ease-in-out;
+  color: white;
 }
 
 .cs-loader-inner label:nth-child(5) {
   -webkit-animation: lol 3s 100ms infinite ease-in-out;
   animation: lol 3s 100ms infinite ease-in-out;
+  color: white;
 }
 
 .cs-loader-inner label:nth-child(4) {
   -webkit-animation: lol 3s 200ms infinite ease-in-out;
   animation: lol 3s 200ms infinite ease-in-out;
+  color: white;
 }
 
 .cs-loader-inner label:nth-child(3) {
   -webkit-animation: lol 3s 300ms infinite ease-in-out;
   animation: lol 3s 300ms infinite ease-in-out;
+  color: white;
 }
 
 .cs-loader-inner label:nth-child(2) {
   -webkit-animation: lol 3s 400ms infinite ease-in-out;
   animation: lol 3s 400ms infinite ease-in-out;
+  color: white;
 }
 
 .cs-loader-inner label:nth-child(1) {
   -webkit-animation: lol 3s 500ms infinite ease-in-out;
   animation: lol 3s 500ms infinite ease-in-out;
+  color: white;
 }
 
 @media (max-width: 992px) {
@@ -890,7 +901,7 @@ ul {
   }
 
   .content {
-    max-width: 320px;
+    max-width: 224px;
     padding: 32px 22px;
     background-color: #100f12;
     position: relative;

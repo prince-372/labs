@@ -15,7 +15,6 @@ import Team from "./components/Team";
 import Updated from "./components/Updated";
 import Firstgame from "./components/Firstgame";
 
-
 function App() {
   const [data, setdata] = useState(true);
   useEffect(() => {
@@ -26,31 +25,31 @@ function App() {
   }, []);
   return (
     <>
-    {data ?(
-      <>
-      <Priloder/>
-      </>
-    ):(
-      <>
-        <div className="bg-header-sec">
-          <Mynav />
-          <Header />
-        </div>
-        <Picture />
-        <Firstgame/>
-        <div className="bg-sec-img">
-          <Gaming />
-        </div>
-        <Domain />
-        <Inhabited />
-        <Team />
-        <Next />
-        <Roadmap />
-        <Updated />
-        <Footer />
-        <Backtotop/>
-      </>
-    )}
+      {data ? (
+        <>
+          <Priloder />
+        </>
+      ) : (
+        <>
+          <div className="bg-header-sec">
+            <Mynav />
+            <Header />
+          </div>
+          <Picture />
+          <Firstgame />
+          <div className="bg-sec-img">
+            <Gaming />
+          </div>
+          <Domain />
+          <Inhabited />
+          <Team />
+          <Next />
+          <Roadmap />
+          <Updated />
+          <Footer />
+          <Backtotop />
+        </>
+      )}
     </>
   );
 }
