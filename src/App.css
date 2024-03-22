@@ -152,14 +152,9 @@
 .min-h-header {
   min-height: 400px;
 }
-.min-h-766 {
-  min-height: 766px;
-}
+
 .max-w-793 {
   max-width: 793px;
-}
-.min-h-592 {
-  min-height: 592px;
 }
 
 .max-w-311 {
@@ -712,6 +707,7 @@ ul {
   right: 15px;
   width: 50px;
   display: none;
+  z-index: 5;
 }
 
 /* .priloder */
@@ -969,5 +965,14 @@ ul {
 @media (min-width: 1200px) {
   .content {
     margin-inline-start: 90px;
+  }
+}
+
+@media (min-width: 576px) {
+  .min-h-592 {
+    min-height: 592px;
+  }
+  .min-h-766 {
+    min-height: 766px;
   }
 }
