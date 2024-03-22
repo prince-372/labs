@@ -1,6 +1,6 @@
 import React from "react";
 
-const First = () => {
+const Firstgame = () => {
   return (
     <div className="position-relative pt-sm-150 pt-50 overflow-x position-relative ">
       <div className="first-elipes d-none d-sm-block"></div>
@@ -25,7 +25,7 @@ const First = () => {
               We’re solving that with world-class storytelling, world-building,
               game design, art and sound. And fun.
             </p>
-            <p className="fs-xxl fw-bold font-roboto text-lightblack text-name text-nowrap d-none d-sm-block">
+            <p className="fs-xxl fw-bold font-roboto text-lightblack text-name text-nowrap d-none d-lg-block">
               About Us
             </p>
           </div>
@@ -72,4 +72,4 @@ const First = () => {
   );
 };
 
-export default First;
+export default Firstgame;

@@ -5,7 +5,7 @@
   --fs-sm1: 16px;
   --fs-md: 18px;
   --fs-md1: 20px;
-  --fs-lg: 24px;
+  --fs-lg: 17px;
   --fs-lg1: 32px;
   --fs-xl: 35px;
   --fs-xl1: 34px;
@@ -92,6 +92,10 @@
 
 .btn-bg {
   background: linear-gradient(151.6deg, #d4145a 1.85%, #fbb03b 98.12%);
+  transition: 0.4s;
+}
+.btn-bg:hover {
+  background: linear-gradient(151.6deg, #fbb03b 1.85%, #d4145a 98.12%);
 }
 /* spacing */
 .py-12 {
@@ -120,10 +124,10 @@
 .pt-50 {
   padding-top: 50px;
 }
-.mb-50{
+.mb-50 {
   margin-bottom: 50px;
 }
-.py-50{
+.py-50 {
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -207,7 +211,6 @@
   position: absolute;
   filter: blur(216px) !important;
   top: 19%;
-  z-index: 2;
   right: -15%;
 }
 .team-elipes2 {
@@ -217,7 +220,6 @@
   position: absolute;
   filter: blur(216px) !important;
   bottom: 19%;
-  z-index: 2;
   left: -15%;
 }
 .roadmap-elipes {
@@ -334,7 +336,7 @@
 .text-name3 {
   position: absolute;
   top: -11%;
-  right: 5%;
+  right: -8%;
   z-index: 3;
 }
 .overflow-x {
@@ -591,6 +593,32 @@ ul {
   background: linear-gradient(151.6deg, #fbb03b 1.85%, #d4145a 98.12%);
 }
 
+.dominbtn {
+  position: relative;
+  padding: 16px 32px 16px 32px;
+  border: none;
+  margin-top: 25px;
+  margin-bottom: 24px;
+  display: inline-block;
+  background: black;
+  color: white;
+}
+
+.dominbtn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 261px;
+  padding: 1px;
+  /* control the border thickness */
+  background: linear-gradient(151.6deg, #D4145A 1.85%, #FBB03B 98.12%);
+  -webkit-mask:
+    linear-gradient(black 0 0) content-box,
+    linear-gradient(black 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
 .cursor-pointer {
   cursor: pointer;
 }
@@ -677,6 +705,100 @@ ul {
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   opacity: 1;
+}
+
+/* .priloder */
+
+.cs-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.cs-loader-inner {
+  transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+  width: calc(100% - 200px);
+  color: #FFF;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.cs-loader-inner label {
+  font-size: 20px;
+  opacity: 0;
+  display:inline-block;
+}
+
+@keyframes lol {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  33% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  66% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+}
+
+@-webkit-keyframes lol {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-300px);
+  }
+  33% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  66% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(300px);
+  }
+}
+
+.cs-loader-inner label:nth-child(6) {
+  -webkit-animation: lol 3s infinite ease-in-out;
+  animation: lol 3s infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(5) {
+  -webkit-animation: lol 3s 100ms infinite ease-in-out;
+  animation: lol 3s 100ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(4) {
+  -webkit-animation: lol 3s 200ms infinite ease-in-out;
+  animation: lol 3s 200ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(3) {
+  -webkit-animation: lol 3s 300ms infinite ease-in-out;
+  animation: lol 3s 300ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(2) {
+  -webkit-animation: lol 3s 400ms infinite ease-in-out;
+  animation: lol 3s 400ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(1) {
+  -webkit-animation: lol 3s 500ms infinite ease-in-out;
+  animation: lol 3s 500ms infinite ease-in-out;
 }
 
 @media (max-width: 992px) {
@@ -817,17 +939,17 @@ ul {
   .pt-sm-150 {
     padding-top: 150px;
   }
-  .pt-sm-100{
+  .pt-sm-100 {
     padding-top: 100px;
   }
-  .mb-sm-150{
+  .mb-sm-150 {
     margin-bottom: 150px;
   }
-  .py-sm-150{
+  .py-sm-150 {
     padding-top: 150px;
     padding-bottom: 150px;
   }
-  .py-sm-100{
+  .py-sm-100 {
     padding-top: 100px;
     padding-bottom: 100px;
   }

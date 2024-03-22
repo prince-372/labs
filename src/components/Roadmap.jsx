@@ -8,7 +8,7 @@ const Roadmap = () => {
     <div id="roadmap">
       <div id="roadmap" className=" mt_2  overflow-x position-relative  ">
         <div className="roadmap-elipes d-none d-sm-block"></div>
-        <p className="fs-xxl text-lightblack fw-bold font-roboto text-name3 d-none d-sm-block">
+        <p className="fs-xxl text-lightblack fw-bold font-roboto text-name3 d-none d-lg-block">
           Roadmap
         </p>
         <div className="container pt-2 ">
@@ -30,7 +30,7 @@ const Roadmap = () => {
                 <p className="fs-lg lh_28 fw-normal text-gray text-center">
                   Hired our first employee
                 </p>
-                <span className="elipes-blur d-none d-sm-block"></span>
+                <span className="elipes-blur"></span>
               </div>
             </div>
             <div className="container left ">
@@ -41,7 +41,7 @@ const Roadmap = () => {
                 <p className="fs-lg lh_28 fw-normal text-gray text-center font-roboto">
                   Launched Bitcoin wallet
                 </p>
-                <span className="elipes-blur d-none d-sm-block"></span>
+                <span className="elipes-blur "></span>
               </div>
             </div>
             <div className="container right">
@@ -53,7 +53,7 @@ const Roadmap = () => {
                 <p className="fs-lg lh_28 fw-normal text-gray text-center font-roboto">
                   1st prize by Bit angels at Coin Agenda, Las Vegas
                 </p>
-                <span className="elipes-blur d-none d-sm-block"></span>
+                <span className="elipes-blur "></span>
               </div>
             </div>
             <div className="container left">
@@ -66,7 +66,7 @@ const Roadmap = () => {
                   <img className="pe-3" src={England} alt="England" />{" "}
                   <img className="pe-3" src={America} alt="America" />
                 </p>
-                <span className="elipes-blur d-block d-sm-none"></span>
+                <span className="elipes-blur"></span>
               </div>
             </div>
             <div className="container right">
@@ -77,7 +77,7 @@ const Roadmap = () => {
                 <p className="fs-lg lh_28 fw-normal text-gray text-center font-roboto">
                   Trusted by 10 Millions+ Users
                 </p>
-                <span className="elipes-blur d-none d-sm-block"></span>
+                <span className="elipes-blur"></span>
                 <div className="text-center">
                   <Stars />
                 </div>

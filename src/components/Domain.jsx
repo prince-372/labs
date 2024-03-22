@@ -9,13 +9,13 @@ const Domain = () => {
         <img className=" w-100 " src={spaceship} alt="spaceship" />
         <div className="row pt-4 ">
           <div className="col-md-4 col-sm-6">
-            <Commanbtn name="name@domain.com" custm="py-3 px-32 mb-4" />
+            <button className="dominbtn py-3 px-32 font-roboto fs-md">name@domain.com</button>
             <Commanbtn name="MakeYourMove" custm="py-3 px-5" />
           </div>
           <div className="col-md-8 col-sm-6">
             <p className=" fw-normal fs-sm1 font-roboto text-lightgray ">
               Unveiled is a unique{" "}
-              <span className=" fw-semibold text-white">
+              <span className=" fw-semibold text-white font-roboto">
                 collectible card game
               </span>{" "}
               in which you gain fervour for your ventures, spending it on
@@ -23,11 +23,11 @@ const Domain = () => {
             </p>
             <p className=" fw-normal fs-sm1 font-roboto text-lightgray">
               You play{" "}
-              <span className="fw-semibold text-white">
+              <span className="fw-semibold text-white font-roboto">
                 a rogue merchant trader
               </span>{" "}
               allied to a noble house, alongside your{" "}
-              <span className="fw-semibold text-white">
+              <span className="fw-semibold text-white font-roboto">
                 cryptid-humanoid companions
               </span>{" "}
               in a game of ambition and alliance, deception and miracles,
